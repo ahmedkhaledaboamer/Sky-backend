@@ -1,0 +1,681 @@
+############################################################################
+# Sky backend — every API endpoint (NestJS, same contract as the Express app)
+#
+# Runnable with the VS Code "REST Client" extension (or JetBrains HTTP client).
+# 1. run "Login" requests below; the tokens are captured automatically
+# 2. replace the *Id variables with real ids from your database
+#
+# Conventions
+#   Base URL ........ {{baseUrl}} = http://localhost:8000/api/v1
+#   Auth header ..... Authorization: Bearer <token>   (Public = no header)
+#   Roles ........... user | manager | admin
+#   Single item ..... 200 { "data": {...} }
+#   Create .......... 201 { "data": {...} }
+#   Delete .......... 204 (no body)
+#   List ............ 200 { "results", "pagination": { currentPage, limit, skip,
+#                          numberOfPage, totalResults, next?, prev? }, "data": [...] }
+#   Validation error  400 { "errors": [ { "type": "field", "value", "msg", "path", "location" } ] }
+#   Other errors .... 4xx/5xx { "status": "fail" | "error", "message": "..." }
+#
+# List query params (every list endpoint):
+#   page=2  limit=12 (default 50, max 500)  sort=-price,sold  field=title,price
+#   keyword=oil  (products: title/titleAr/description, branches: name/city/address,
+#                 others: name/nameAr)
+#   any field filter: category=<id>  brand=<id>
+#   comparisons: price[gte]=100&price[lte]=500  ratingsAverage[gte]=4
+############################################################################
+
+@host = http://localhost:8000
+@baseUrl = {{host}}/api/v1
+@adminToken = {{loginAdmin.response.body.token}}
+@managerToken = {{loginManager.response.body.token}}
+@userToken = {{loginUser.response.body.token}}
+
+@categoryId = 000000000000000000000000
+@subCategoryId = 000000000000000000000000
+@brandId = 000000000000000000000000
+@productId = 000000000000000000000000
+@reviewId = 000000000000000000000000
+@userId = 000000000000000000000000
+@addressId = 000000000000000000000000
+@couponId = 000000000000000000000000
+@cartId = 000000000000000000000000
+@cartItemId = 000000000000000000000000
+@orderId = 000000000000000000000000
+@branchId = 000000000000000000000000
+
+
+############################################################################
+# AUTH  /auth  (Public)
+############################################################################
+
+### Signup — 201 { data: user, token }
+# errors: name required/min 3, valid email not used ("E-mail already in user"),
+#         password min 6 and === passwordConfirm
+POST {{baseUrl}}/auth/signup
+Content-Type: application/json
+
+{
+  "name": "New User",
+  "email": "new.user@example.com",
+  "password": "123456",
+  "passwordConfirm": "123456"
+}
+
+### Login (admin) — 200 { data: user, token } | 401 "Incorrect email or password"
+# @name loginAdmin
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@care.com",
+  "password": "<seed password>"
+}
+
+### Login (manager)
+# @name loginManager
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "manager@care.com",
+  "password": "<seed password>"
+}
+
+### Login (customer). Logging in also re-activates an account closed with DELETE /users/deleteMe
+# @name loginUser
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "ahmed@care.com",
+  "password": "<seed password>"
+}
+
+### Forgot password — 200 { status: "Success", message: "Reset code sent to email" }
+# 404 "There is no user with that email ..." | 500 "There is an error in sending email"
+POST {{baseUrl}}/auth/forgotPassword
+Content-Type: application/json
+
+{
+  "email": "ahmed@care.com"
+}
+
+### Verify reset code (6 digits, valid 10 min) — 200 { status: "Success" } | 400 "Reset code invalid or expired"
+POST {{baseUrl}}/auth/verifyResetCode
+Content-Type: application/json
+
+{
+  "resetCode": "123456"
+}
+
+### Reset password — 200 { token } | 400 "Reset code not verified" | 404
+PUT {{baseUrl}}/auth/resetPassword
+Content-Type: application/json
+
+{
+  "email": "ahmed@care.com",
+  "newPassword": "654321"
+}
+
+
+############################################################################
+# LOGGED USER  /users  (any role)
+############################################################################
+
+### Get my profile — 200 { data: user }
+GET {{baseUrl}}/users/getMe
+Authorization: Bearer {{userToken}}
+
+### Update my profile (name, email, phone only) — 200 { data: user }
+# phone: UAE / Egypt / KSA mobile numbers only
+PUT {{baseUrl}}/users/updateMe
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "name": "Ahmed Ali",
+  "phone": "+201001234567"
+}
+
+### Change my password — 200 { data: user, token } (store the new token; old tokens get 401)
+PUT {{baseUrl}}/users/changeMyPassword
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "password": "1234567"
+}
+
+### Deactivate my account — 204 (logging in again re-activates it)
+DELETE {{baseUrl}}/users/deleteMe
+Authorization: Bearer {{userToken}}
+
+
+############################################################################
+# USERS (admin dashboard)  /users  (admin, manager; delete = admin)
+############################################################################
+
+### List users — list response
+GET {{baseUrl}}/users?limit=10&sort=-createdAt
+Authorization: Bearer {{adminToken}}
+
+### Get user — 200 { data: user }
+GET {{baseUrl}}/users/{{userId}}
+Authorization: Bearer {{adminToken}}
+
+### Create user (JSON or multipart/form-data with file field "profileImg") — 201 { data: user }
+POST {{baseUrl}}/users
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Staff Member",
+  "email": "staff@example.com",
+  "password": "123456",
+  "passwordConfirm": "123456",
+  "phone": "+971501234567",
+  "role": "manager"
+}
+
+### Update user (name, email, phone, profileImg, role, active — never the password) — 200 { data: user }
+PUT {{baseUrl}}/users/{{userId}}
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Staff Member 2",
+  "role": "user",
+  "active": true
+}
+
+### Change a user's password — 200 { data: user }
+# errors on "password": "Incorrect current password", "Password Confirmation incorrect"
+PUT {{baseUrl}}/users/changeMyPassword/{{userId}}
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "currentPassword": "123456",
+  "password": "654321",
+  "passwordConfirm": "654321"
+}
+
+### Delete user (admin) — 204
+DELETE {{baseUrl}}/users/{{userId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# CATEGORIES  /categories  (GET public; POST/PUT admin, manager; DELETE admin)
+############################################################################
+
+### List categories — list response; image is a full URL
+GET {{baseUrl}}/categories?limit=20&keyword=hair
+
+### Get category — 200 { data }
+GET {{baseUrl}}/categories/{{categoryId}}
+
+### Create category (multipart: name, nameAr, image file) — 201 { data }
+POST {{baseUrl}}/categories
+Authorization: Bearer {{adminToken}}
+Content-Type: multipart/form-data; boundary=Boundary
+
+--Boundary
+Content-Disposition: form-data; name="name"
+
+Hair Masks
+--Boundary
+Content-Disposition: form-data; name="nameAr"
+
+ماسكات الشعر
+--Boundary
+Content-Disposition: form-data; name="image"; filename="logo.png"
+Content-Type: image/png
+
+< ./images/logo.png
+--Boundary--
+
+### Update category (JSON or multipart; image optional, kept when not sent) — 200 { data }
+PUT {{baseUrl}}/categories/{{categoryId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "name": "Hair Masks Pro"
+}
+
+### Delete category (admin) — 204
+DELETE {{baseUrl}}/categories/{{categoryId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# SUBCATEGORIES  /subcategories  and nested  /categories/:categoryId/subcategory
+############################################################################
+
+### List subcategories — list response
+GET {{baseUrl}}/subcategories
+
+### List subcategories of a category (nested, singular "subcategory")
+GET {{baseUrl}}/categories/{{categoryId}}/subcategory
+
+### Get subcategory — 200 { data }
+GET {{baseUrl}}/subcategories/{{subCategoryId}}
+
+### Create subcategory (admin, manager) — 201 { data }
+POST {{baseUrl}}/subcategories
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Argan Oils",
+  "nameAr": "زيوت الأرجان",
+  "category": "{{categoryId}}"
+}
+
+### Create subcategory inside a category (category taken from the URL)
+POST {{baseUrl}}/categories/{{categoryId}}/subcategory
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Castor Oils"
+}
+
+### Update subcategory (admin, manager) — 200 { data }
+PUT {{baseUrl}}/subcategories/{{subCategoryId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "name": "Argan Oil"
+}
+
+### Delete subcategory (admin) — 204
+DELETE {{baseUrl}}/subcategories/{{subCategoryId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# BRANDS  /brands  (GET public; POST/PUT admin, manager; DELETE admin)
+############################################################################
+
+### List brands
+GET {{baseUrl}}/brands?sort=name
+
+### Get brand
+GET {{baseUrl}}/brands/{{brandId}}
+
+### Create brand (JSON, or multipart with optional "image" file) — 201 { data }
+POST {{baseUrl}}/brands
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Pure Glow",
+  "nameAr": "بيور جلو"
+}
+
+### Update brand — 200 { data } (image kept when no file is sent)
+PUT {{baseUrl}}/brands/{{brandId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "nameAr": "بيور جلو"
+}
+
+### Delete brand (admin) — 204
+DELETE {{baseUrl}}/brands/{{brandId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# PRODUCTS  /products  (GET public; POST/PUT admin, manager; DELETE admin)
+############################################################################
+
+### List products (filters / search / sort / paging)
+GET {{baseUrl}}/products?keyword=oil&price[gte]=50&price[lte]=500&sort=-sold&page=1&limit=12
+
+### Get product — 200 { data } incl. populated "reviews" and category { name, nameAr, slug }
+GET {{baseUrl}}/products/{{productId}}
+
+### Create product (multipart). Lists may be repeated fields or JSON strings:
+# colors, subcategories, benefits/ingredients/sizes ([{en, ar}]), directions ({en, ar} or text)
+# imageCover file (required), images files (max 5). priceAfterDiscount must be < price.
+POST {{baseUrl}}/products
+Authorization: Bearer {{adminToken}}
+Content-Type: multipart/form-data; boundary=Boundary
+
+--Boundary
+Content-Disposition: form-data; name="title"
+
+Argan Hair Oil
+--Boundary
+Content-Disposition: form-data; name="description"
+
+Pure argan oil that nourishes dry and damaged hair.
+--Boundary
+Content-Disposition: form-data; name="quantity"
+
+20
+--Boundary
+Content-Disposition: form-data; name="price"
+
+150
+--Boundary
+Content-Disposition: form-data; name="priceAfterDiscount"
+
+120
+--Boundary
+Content-Disposition: form-data; name="category"
+
+{{categoryId}}
+--Boundary
+Content-Disposition: form-data; name="colors"
+
+gold
+--Boundary
+Content-Disposition: form-data; name="benefits"
+
+[{"en":"Softens hair","ar":"ينعم الشعر"}]
+--Boundary
+Content-Disposition: form-data; name="imageCover"; filename="oil1.png"
+Content-Type: image/png
+
+< ./images/oil1.png
+--Boundary
+Content-Disposition: form-data; name="images"; filename="oil2.png"
+Content-Type: image/png
+
+< ./images/oil2.png
+--Boundary--
+
+### Update product (JSON or multipart; send "images" with the URLs to keep) — 200 { data }
+PUT {{baseUrl}}/products/{{productId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "price": 140,
+  "quantity": 25
+}
+
+### Delete product (admin) — 204
+DELETE {{baseUrl}}/products/{{productId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# REVIEWS  /reviews  and nested  /products/:productId/reviews
+############################################################################
+
+### Reviews of a product — list response (user: { _id, name })
+GET {{baseUrl}}/products/{{productId}}/reviews
+
+### All reviews
+GET {{baseUrl}}/reviews
+
+### Get review
+GET {{baseUrl}}/reviews/{{reviewId}}
+
+### Create review (user role; one per product) — 201 { data }
+# product + user default to the URL product and the logged user
+POST {{baseUrl}}/products/{{productId}}/reviews
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "title": "Great product",
+  "ratings": 5
+}
+
+### Update review (user, owner only) — 200 { data }
+PUT {{baseUrl}}/reviews/{{reviewId}}
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "ratings": 4
+}
+
+### Delete review (owner, or admin / manager) — 204
+DELETE {{baseUrl}}/reviews/{{reviewId}}
+Authorization: Bearer {{userToken}}
+
+
+############################################################################
+# WISHLIST  /wishlist  (user)
+############################################################################
+
+### Get wishlist — 200 { status, results, data: [products] }
+GET {{baseUrl}}/wishlist
+Authorization: Bearer {{userToken}}
+
+### Add to wishlist — 200 { status, message, data: [productIds] }
+POST {{baseUrl}}/wishlist
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "productId": "{{productId}}"
+}
+
+### Remove from wishlist — 200 { status, message, data: [productIds] }
+DELETE {{baseUrl}}/wishlist/{{productId}}
+Authorization: Bearer {{userToken}}
+
+
+############################################################################
+# ADDRESSES  /address  (user; singular "address")
+############################################################################
+
+### Get my addresses — 200 { status, results, data: [addresses] }
+GET {{baseUrl}}/address
+Authorization: Bearer {{userToken}}
+
+### Add address — 200 { status, message, data: [addresses] }
+POST {{baseUrl}}/address
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "alias": "home",
+  "details": "12 Nile Street",
+  "phone": "01000000000",
+  "city": "Cairo",
+  "postalCode": "11511"
+}
+
+### Remove address — 200 { status, message, data: [addresses] }
+DELETE {{baseUrl}}/address/{{addressId}}
+Authorization: Bearer {{userToken}}
+
+
+############################################################################
+# COUPONS  /coupon  (admin, manager; delete = admin; singular "coupon")
+############################################################################
+
+### List coupons
+GET {{baseUrl}}/coupon
+Authorization: Bearer {{managerToken}}
+
+### Get coupon
+GET {{baseUrl}}/coupon/{{couponId}}
+Authorization: Bearer {{managerToken}}
+
+### Create coupon (name is trimmed + upper-cased; discount 1-100 %) — 201 { data }
+POST {{baseUrl}}/coupon
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "summer20",
+  "expire": "2030-12-31",
+  "discount": 20
+}
+
+### Update coupon — 200 { data }
+PUT {{baseUrl}}/coupon/{{couponId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "discount": 25
+}
+
+### Delete coupon (admin) — 204
+DELETE {{baseUrl}}/coupon/{{couponId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# CART  /cart  (user)
+# Response: 200 { status: "success", message?, numOfCartItems,
+#                 data: { _id (cartId), user, cartItems: [{ _id (itemId), product, quantity, color, price }],
+#                         totalCartPrice, totalPriceAfterDiscount?, coupon? } }
+############################################################################
+
+### Get my cart (empty cart { cartItems: [], totalCartPrice: 0 } when none)
+GET {{baseUrl}}/cart
+Authorization: Bearer {{userToken}}
+
+### Add product (same product + color => quantity + 1) — 200
+POST {{baseUrl}}/cart
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "productId": "{{productId}}",
+  "color": "gold"
+}
+
+### Apply coupon (case-insensitive name) — 200 | 400 "Coupon is invalid or expired"
+PUT {{baseUrl}}/cart/applyCoupon
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "coupon": "SUMMER20"
+}
+
+### Update item quantity (itemId = cartItems[]._id) — 200
+PUT {{baseUrl}}/cart/{{cartItemId}}
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "quantity": 2
+}
+
+### Remove item — 200
+DELETE {{baseUrl}}/cart/{{cartItemId}}
+Authorization: Bearer {{userToken}}
+
+### Clear cart — 204
+DELETE {{baseUrl}}/cart
+Authorization: Bearer {{userToken}}
+
+
+############################################################################
+# ORDERS  /orders
+############################################################################
+
+### Create cash order from my cart (user) — 201 { status: "success", data: order }; cart is cleared
+POST {{baseUrl}}/orders/{{cartId}}
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "shippingAddress": {
+    "details": "12 Nile Street",
+    "phone": "01000000000",
+    "city": "Cairo",
+    "postalCode": "11511"
+  }
+}
+
+### Stripe checkout session (user) — 200 { status: "success", session } → redirect to session.url
+POST {{baseUrl}}/orders/checkout-session/{{cartId}}
+Authorization: Bearer {{userToken}}
+Content-Type: application/json
+
+{
+  "shippingAddress": { "details": "12 Nile Street", "phone": "01000000000", "city": "Cairo", "postalCode": "11511" }
+}
+
+### Stripe checkout session — legacy GET (no shipping address)
+GET {{baseUrl}}/orders/checkout-session/{{cartId}}
+Authorization: Bearer {{userToken}}
+
+### List orders (user: own orders; admin/manager: all) — list response
+GET {{baseUrl}}/orders?sort=-createdAt
+Authorization: Bearer {{userToken}}
+
+### Get order (users only their own) — 200 { data }
+GET {{baseUrl}}/orders/{{orderId}}
+Authorization: Bearer {{userToken}}
+
+### Mark as paid (admin, manager) — 200 { status: "success", data }
+PUT {{baseUrl}}/orders/{{orderId}}/pay
+Authorization: Bearer {{adminToken}}
+
+### Mark as delivered (admin, manager) — 200 { status: "success", data }
+PUT {{baseUrl}}/orders/{{orderId}}/deliver
+Authorization: Bearer {{adminToken}}
+
+### Stripe webhook (called by Stripe; NOT under /api/v1) — 200 { received: true } | 400 "Webhook Error: ..."
+POST {{host}}/webhook-checkout
+Content-Type: application/json
+Stripe-Signature: t=0,v1=invalid
+
+{ "type": "checkout.session.completed" }
+
+
+############################################################################
+# BRANCHES  /branches  (GET public; POST/PUT admin, manager; DELETE admin)
+############################################################################
+
+### List active branches (add all=true to include inactive ones)
+GET {{baseUrl}}/branches?keyword=cairo
+
+### Get branch
+GET {{baseUrl}}/branches/{{branchId}}
+
+### Create branch — 201 { data }
+POST {{baseUrl}}/branches
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "name": "Downtown Pharmacy",
+  "nameAr": "صيدلية وسط البلد",
+  "city": "Cairo",
+  "address": "5 Talaat Harb St",
+  "phone": "0223456789",
+  "workingHours": "9am - 11pm",
+  "location": { "lat": 30.0444, "lng": 31.2357 },
+  "isMain": false
+}
+
+### Update branch — 200 { data }
+PUT {{baseUrl}}/branches/{{branchId}}
+Authorization: Bearer {{managerToken}}
+Content-Type: application/json
+
+{
+  "workingHours": "24 hours"
+}
+
+### Delete branch (admin) — 204
+DELETE {{baseUrl}}/branches/{{branchId}}
+Authorization: Bearer {{adminToken}}
+
+
+############################################################################
+# STATIC FILES (uploaded images, served from /uploads at the site root)
+############################################################################
+
+### e.g. {{host}}/categories/<file>.jpeg, /brands/..., /products/..., /users/...
+GET {{host}}/products/example.jpeg

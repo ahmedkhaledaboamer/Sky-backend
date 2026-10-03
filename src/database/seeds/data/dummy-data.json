@@ -1,0 +1,2177 @@
+{
+  "categories": [
+    {
+      "name": "Hair Oils",
+      "nameAr": "زيوت الشعر",
+      "image": "oil1.png"
+    },
+    {
+      "name": "Hair Serums",
+      "nameAr": "سيروم الشعر",
+      "image": "hair.png"
+    },
+    {
+      "name": "Conditioners",
+      "nameAr": "بلسم الشعر",
+      "image": "hair2.png"
+    },
+    {
+      "name": "Shampoo",
+      "nameAr": "الشامبو",
+      "image": "sh1.png"
+    },
+    {
+      "name": "Skin Care",
+      "nameAr": "العناية بالبشرة",
+      "image": "care.png"
+    },
+    {
+      "name": "Moisturizers",
+      "nameAr": "المرطبات",
+      "image": "scan1.png"
+    },
+    {
+      "name": "Melasma Care",
+      "nameAr": "علاج الكلف",
+      "image": "ant1.png"
+    },
+    {
+      "name": "Sun Protection",
+      "nameAr": "الحماية من الشمس",
+      "image": "sun1.png"
+    },
+    {
+      "name": "Anti Acne",
+      "nameAr": "علاج حب الشباب",
+      "image": "v1.webp"
+    },
+    {
+      "name": "Intimate Care",
+      "nameAr": "العناية الحساسة",
+      "image": "woman.png"
+    }
+  ],
+  "subCategories": [
+    {
+      "name": "Herbal Oils",
+      "nameAr": "زيوت عشبية",
+      "category": "Hair Oils"
+    },
+    {
+      "name": "Natural Oils",
+      "nameAr": "زيوت طبيعية",
+      "category": "Hair Oils"
+    },
+    {
+      "name": "Smoothing Serums",
+      "nameAr": "سيروم تنعيم",
+      "category": "Hair Serums"
+    },
+    {
+      "name": "Daily Conditioners",
+      "nameAr": "بلسم يومي",
+      "category": "Conditioners"
+    },
+    {
+      "name": "Treatment Shampoo",
+      "nameAr": "شامبو علاجي",
+      "category": "Shampoo"
+    },
+    {
+      "name": "Calamine Care",
+      "nameAr": "منتجات الكالامين",
+      "category": "Skin Care"
+    },
+    {
+      "name": "Panthenol Care",
+      "nameAr": "منتجات البانثينول",
+      "category": "Moisturizers"
+    },
+    {
+      "name": "Spot Correction",
+      "nameAr": "تفتيح البقع",
+      "category": "Melasma Care"
+    },
+    {
+      "name": "Sunscreen Lotions",
+      "nameAr": "لوشن واقي شمس",
+      "category": "Sun Protection"
+    },
+    {
+      "name": "Sunscreen Creams",
+      "nameAr": "كريم واقي شمس",
+      "category": "Sun Protection"
+    },
+    {
+      "name": "Face Acne Care",
+      "nameAr": "حب الشباب للوجه",
+      "category": "Anti Acne"
+    },
+    {
+      "name": "Body Acne Care",
+      "nameAr": "حب الشباب للجسم",
+      "category": "Anti Acne"
+    },
+    {
+      "name": "Hygiene Wash",
+      "nameAr": "غسول مهبلي",
+      "category": "Intimate Care"
+    }
+  ],
+  "brands": [
+    {
+      "name": "Dream & Shine",
+      "nameAr": "دريم آند شاين",
+      "color": "#B8860B",
+      "initials": "DS"
+    },
+    {
+      "name": "Herbal Touch",
+      "nameAr": "هيربال تاتش",
+      "color": "#3F7D3A",
+      "initials": "HT"
+    },
+    {
+      "name": "Golden Drops",
+      "nameAr": "جولدن دروبس",
+      "color": "#C9A227",
+      "initials": "GD"
+    },
+    {
+      "name": "Silky Hair",
+      "nameAr": "سيلكي هير",
+      "color": "#1F4E9C",
+      "initials": "SH"
+    },
+    {
+      "name": "Calm Skin",
+      "nameAr": "كالم سكين",
+      "color": "#D16D8C",
+      "initials": "CS"
+    },
+    {
+      "name": "Aqua Derm",
+      "nameAr": "أكوا ديرم",
+      "color": "#1E88C8",
+      "initials": "AD"
+    },
+    {
+      "name": "Pure Glow",
+      "nameAr": "بيور جلو",
+      "color": "#7B4FA0",
+      "initials": "PG"
+    },
+    {
+      "name": "Sun Shield",
+      "nameAr": "صن شيلد",
+      "color": "#E58E1A",
+      "initials": "SS"
+    },
+    {
+      "name": "Clear Skin",
+      "nameAr": "كلير سكين",
+      "color": "#2BA59A",
+      "initials": "CL"
+    },
+    {
+      "name": "Fresh Femme",
+      "nameAr": "فريش فيم",
+      "color": "#B0246B",
+      "initials": "FF"
+    }
+  ],
+  "products": [
+    {
+      "key": "herbal-hair-oil",
+      "title": "Herbal Hair Oil",
+      "titleAr": "زيت الشعر العشبي",
+      "description": "A signature ayurvedic-inspired hair oil formulated with a rich blend of natural extracts including Amla, Bhringraj, Brahmi, Jaborandi, Arnica, Jatamansi, Karanj, Mulethi, Mehandi, Methi, Neem, and Tea Tree Oil — carried in Til, Coconut, Sunflower, and Olive oils. Designed to deeply nourish the scalp, strengthen roots, and restore vitality to dull or weak hair.",
+      "descriptionAr": "زيت شعر مستوحى من الأيورفيدا بتركيبة غنية من الخلاصات الطبيعية تشمل الأملا والبهرنغراج والبراهمي والجابوراندي والأرنيكا والجاتاماسي والكارانج والميولثي والحناء والميثي والنيم وزيت شجرة الشاي — في قاعدة من زيوت السمسم وجوز الهند وعباد الشمس والزيتون. مصمم لتغذية فروة الرأس بعمق وتقوية الجذور واستعادة حيوية الشعر الضعيف أو الباهت.",
+      "benefits": [
+        {
+          "en": "Nourishes scalp with 12+ herbal extracts",
+          "ar": "يغذّي فروة الرأس بأكثر من 12 خلاصة عشبية"
+        },
+        {
+          "en": "Strengthens hair roots and reduces breakage",
+          "ar": "يقوّي جذور الشعر ويقلل التقصف"
+        },
+        {
+          "en": "Supports healthy hair growth",
+          "ar": "يدعم نمو الشعر الصحي"
+        },
+        {
+          "en": "Suitable for all hair types",
+          "ar": "مناسب لجميع أنواع الشعر"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Til Oil (Sesamum Indicum)",
+          "ar": "زيت السمسم"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Sunflower Oil",
+          "ar": "زيت عباد الشمس"
+        },
+        {
+          "en": "Olive Oil",
+          "ar": "زيت الزيتون"
+        },
+        {
+          "en": "Amla Extract",
+          "ar": "خلاصة الأملا"
+        },
+        {
+          "en": "Bhringraj Extract",
+          "ar": "خلاصة البهرنغراج"
+        },
+        {
+          "en": "Brahmi Extract",
+          "ar": "خلاصة البراهمي"
+        },
+        {
+          "en": "Jaborandi Extract",
+          "ar": "خلاصة الجابوراندي"
+        },
+        {
+          "en": "Arnica Extract",
+          "ar": "خلاصة الأرنيكا"
+        },
+        {
+          "en": "Neem Seed Extract",
+          "ar": "خلاصة بذور النيم"
+        },
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        }
+      ],
+      "directions": {
+        "en": "Apply a sufficient quantity to the scalp and hair. Massage gently all over the scalp and leave overnight for best results.",
+        "ar": "ضعي كمية مناسبة على فروة الرأس والشعر. دلّكي بلطف على فروة الرأس بالكامل واتركيه طوال الليل للحصول على أفضل النتائج."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": true,
+      "cover": "oil1.png",
+      "images": [
+        "oil2.png",
+        "oil3.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Herbal Oils",
+      "brand": "Herbal Touch",
+      "price": 31,
+      "priceAfterDiscount": 27,
+      "quantity": 40,
+      "sold": 5,
+      "colors": []
+    },
+    {
+      "key": "argan-hair-oil",
+      "title": "Argan Hair Oil",
+      "titleAr": "زيت الأرغان للشعر",
+      "description": "A premium hair treatment combining cold-pressed argan oil with olive oil to deeply moisturize, smooth flyaways, and restore shine. Ideal for dry, frizzy, or chemically treated hair.",
+      "descriptionAr": "علاج فاخر للشعر يجمع زيت الأرغان المعصور على البارد مع زيت الزيتون لترطيب عميق وتنعيم الشعر المتطاير واستعادة اللمعان. مثالي للشعر الجاف أو المجعد أو المعالج كيميائياً.",
+      "benefits": [
+        {
+          "en": "Smooths frizz and flyaways",
+          "ar": "يقضي على التطاير والشعر المجعد"
+        },
+        {
+          "en": "Restores natural shine",
+          "ar": "يستعيد اللمعان الطبيعي"
+        },
+        {
+          "en": "Deeply moisturizes dry hair",
+          "ar": "يرطّب الشعر الجاف بعمق"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Argan Oil",
+          "ar": "زيت الأرغان"
+        },
+        {
+          "en": "Olive Oil",
+          "ar": "زيت الزيتون"
+        },
+        {
+          "en": "Mineral Oil",
+          "ar": "الزيت المعدني"
+        }
+      ],
+      "directions": {
+        "en": "Apply a sufficient quantity to the scalp and hair. Massage gently and leave overnight for best results.",
+        "ar": "ضعي كمية مناسبة على فروة الرأس والشعر. دلّكي بلطف واتركيه طوال الليل للحصول على أفضل النتائج."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "oil4.png",
+      "images": [
+        "oil5.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Natural Oils",
+      "brand": "Golden Drops",
+      "price": 37,
+      "quantity": 57,
+      "sold": 34,
+      "colors": []
+    },
+    {
+      "key": "amla-hair-oil",
+      "title": "Amla Hair Oil",
+      "titleAr": "زيت الأملا للشعر",
+      "description": "A traditional Amla-based hair oil that combines Indian gooseberry extract with coconut and sesame oils. Helps strengthen roots, reduce premature greying, and leave hair soft, dark, and full of life.",
+      "descriptionAr": "زيت شعر تقليدي مبني على الأملا يجمع خلاصة عنب الثعلب الهندي مع زيتي جوز الهند والسمسم. يساعد على تقوية الجذور وتقليل الشيب المبكر وترك الشعر ناعماً وغامقاً ومفعماً بالحيوية.",
+      "benefits": [
+        {
+          "en": "Rich in vitamin C from Amla",
+          "ar": "غني بفيتامين سي من الأملا"
+        },
+        {
+          "en": "Strengthens hair from root to tip",
+          "ar": "يقوّي الشعر من الجذور حتى الأطراف"
+        },
+        {
+          "en": "Helps reduce premature greying",
+          "ar": "يساعد على تقليل الشيب المبكر"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Amla Extract",
+          "ar": "خلاصة الأملا"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Sesame (Til) Oil",
+          "ar": "زيت السمسم"
+        },
+        {
+          "en": "Mineral Oil",
+          "ar": "الزيت المعدني"
+        }
+      ],
+      "directions": {
+        "en": "Apply to scalp and hair. Massage gently and leave overnight for best results.",
+        "ar": "ضعيه على فروة الرأس والشعر. دلّكي بلطف واتركيه طوال الليل للحصول على أفضل النتائج."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "oil5.png",
+      "images": [
+        "oil1.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Herbal Oils",
+      "brand": "Golden Drops",
+      "price": 28,
+      "priceAfterDiscount": 25,
+      "quantity": 74,
+      "sold": 63,
+      "colors": []
+    },
+    {
+      "key": "olive-hair-oil",
+      "title": "Olive Hair Oil",
+      "titleAr": "زيت الزيتون للشعر",
+      "description": "Pure olive oil enriched with lemon and aloe vera extracts to soften hair, soothe the scalp, and add manageable, healthy shine without weighing strands down.",
+      "descriptionAr": "زيت زيتون نقي معزّز بخلاصتي الليمون والصبار لتنعيم الشعر وتهدئة فروة الرأس وإضافة لمعان صحي سهل التصفيف دون إثقال الخصلات.",
+      "benefits": [
+        {
+          "en": "Conditions and softens hair",
+          "ar": "يرطّب وينعّم الشعر"
+        },
+        {
+          "en": "Soothes the scalp",
+          "ar": "يهدّئ فروة الرأس"
+        },
+        {
+          "en": "Adds healthy shine",
+          "ar": "يضيف لمعاناً صحياً"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Olive Oil",
+          "ar": "زيت الزيتون"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Sesame (Til) Oil",
+          "ar": "زيت السمسم"
+        },
+        {
+          "en": "Lemon Extract",
+          "ar": "خلاصة الليمون"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        }
+      ],
+      "directions": {
+        "en": "Apply to scalp and hair, massage gently, leave overnight.",
+        "ar": "ضعيه على فروة الرأس والشعر ودلّكي بلطف واتركيه طوال الليل."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "oil2.png",
+      "images": [
+        "oil6.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Natural Oils",
+      "brand": "Herbal Touch",
+      "price": 27,
+      "quantity": 91,
+      "sold": 92,
+      "colors": []
+    },
+    {
+      "key": "garlic-hair-oil",
+      "title": "Garlic Hair Oil",
+      "titleAr": "زيت الثوم للشعر",
+      "description": "A clarifying and strengthening oil that uses concentrated garlic extract with rosemary and lemon to stimulate the scalp and support healthier hair density. The coconut and sesame base softens the natural pungency.",
+      "descriptionAr": "زيت منقّي ومقوٍّ يستخدم خلاصة الثوم المركزة مع إكليل الجبل والليمون لتنشيط فروة الرأس ودعم كثافة شعر أكثر صحة. قاعدة من زيتي جوز الهند والسمسم لتلطيف الرائحة الطبيعية.",
+      "benefits": [
+        {
+          "en": "Stimulates the scalp",
+          "ar": "ينشّط فروة الرأس"
+        },
+        {
+          "en": "Supports thicker hair",
+          "ar": "يدعم كثافة الشعر"
+        },
+        {
+          "en": "Enriched with rosemary",
+          "ar": "معزّز بإكليل الجبل"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Garlic Extract",
+          "ar": "خلاصة الثوم"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Sesame (Til) Oil",
+          "ar": "زيت السمسم"
+        },
+        {
+          "en": "Lemon Extract",
+          "ar": "خلاصة الليمون"
+        },
+        {
+          "en": "Rosemary Extract",
+          "ar": "خلاصة إكليل الجبل"
+        }
+      ],
+      "directions": {
+        "en": "Apply to scalp and hair, massage gently, leave overnight.",
+        "ar": "ضعيه على فروة الرأس والشعر ودلّكي بلطف واتركيه طوال الليل."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "oil6.png",
+      "images": [
+        "oil3.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Herbal Oils",
+      "brand": "Herbal Touch",
+      "price": 28,
+      "quantity": 108,
+      "sold": 121,
+      "colors": []
+    },
+    {
+      "key": "black-seed-hair-oil",
+      "title": "Black Seed Hair Oil",
+      "titleAr": "زيت الحبة السوداء  للشعر",
+      "description": "A revitalizing hair oil featuring traditional black seed (Nigella sativa) extract combined with olive, coconut, and sesame oils, plus vitamin E. Supports a balanced scalp and brings life back to dull, fatigued hair.",
+      "descriptionAr": "زيت شعر منعش يحتوي على خلاصة الحبة السوداء التقليدية مع زيوت الزيتون وجوز الهند والسمسم بالإضافة إلى فيتامين هـ. يدعم توازن فروة الرأس ويعيد الحياة للشعر الباهت والمتعب.",
+      "benefits": [
+        {
+          "en": "Rich in antioxidants",
+          "ar": "غني بمضادات الأكسدة"
+        },
+        {
+          "en": "Revitalizes dull hair",
+          "ar": "ينعش الشعر الباهت"
+        },
+        {
+          "en": "Vitamin E enriched",
+          "ar": "معزّز بفيتامين هـ"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Black Seed Extract",
+          "ar": "خلاصة الحبة السوداء  "
+        },
+        {
+          "en": "Olive Oil",
+          "ar": "زيت الزيتون"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Vitamin E (Tocopheryl Acetate)",
+          "ar": "فيتامين هـ"
+        }
+      ],
+      "directions": {
+        "en": "Apply to scalp and hair, massage gently, leave overnight.",
+        "ar": "ضعيه على فروة الرأس والشعر ودلّكي بلطف واتركيه طوال الليل."
+      },
+      "sizes": [
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "oil3.png",
+      "images": [
+        "oil4.png"
+      ],
+      "category": "Hair Oils",
+      "sub": "Natural Oils",
+      "brand": "Golden Drops",
+      "price": 29,
+      "priceAfterDiscount": 26,
+      "quantity": 45,
+      "sold": 10,
+      "colors": []
+    },
+    {
+      "key": "hair-serum",
+      "title": "Hair Serum",
+      "titleAr": "سيروم الشعر",
+      "description": "A leave-in styling serum infused with sunflower, coconut, and almond oils plus vitamin E. Tames frizz, locks in moisture, and delivers a glossy, salon-finish shine without weighing hair down.",
+      "descriptionAr": "سيروم تصفيف يُترك على الشعر، مغذٍّ بزيوت عباد الشمس وجوز الهند واللوز إلى جانب فيتامين هـ. يروّض التطاير ويحبس الترطيب ويمنح لمعاناً بمستوى الصالونات دون إثقال الشعر.",
+      "benefits": [
+        {
+          "en": "Smooths frizz instantly",
+          "ar": "يقضي على التطاير فوراً"
+        },
+        {
+          "en": "Adds salon-grade shine",
+          "ar": "يضيف لمعاناً بمستوى الصالونات"
+        },
+        {
+          "en": "Lightweight, non-greasy",
+          "ar": "خفيف وغير دهني"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Cyclopentasiloxane",
+          "ar": "سيكلوبنتاسيلوكسان"
+        },
+        {
+          "en": "Dimethiconol",
+          "ar": "ديميثيكونول"
+        },
+        {
+          "en": "Sunflower Oil",
+          "ar": "زيت عباد الشمس"
+        },
+        {
+          "en": "Coconut Oil",
+          "ar": "زيت جوز الهند"
+        },
+        {
+          "en": "Almond Oil",
+          "ar": "زيت اللوز"
+        },
+        {
+          "en": "Vitamin E",
+          "ar": "فيتامين هـ"
+        }
+      ],
+      "directions": {
+        "en": "Use after shampooing and conditioning on towel-dried hair. Can also be used on dry hair to add smoothness and shine. Use sparingly — a dime-sized amount is enough.",
+        "ar": "استخدميه بعد الشامبو والبلسم على الشعر المجفف بالمنشفة. يمكن أيضاً استخدامه على الشعر الجاف للتنعيم واللمعان. استخدمي كمية صغيرة بحجم قطعة نقدية فقط."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": true,
+      "cover": "hair.png",
+      "images": [
+        "hair2.png"
+      ],
+      "category": "Hair Serums",
+      "sub": "Smoothing Serums",
+      "brand": "Dream & Shine",
+      "price": 38,
+      "priceAfterDiscount": 33,
+      "quantity": 62,
+      "sold": 39,
+      "colors": []
+    },
+    {
+      "key": "hair-conditioner",
+      "title": "Leave-In Hair Conditioner",
+      "titleAr": "بلسم الشعر يُترك دون شطف",
+      "description": "A weightless leave-in conditioner that detangles, hydrates, and shields hair from breakage. Powered by aloe vera and a smart silicone blend that smooths the cuticle without buildup.",
+      "descriptionAr": "بلسم خفيف يُترك على الشعر يفك التشابك ويرطّب ويحمي من التكسر. مدعوم بالصبار ومزيج سيليكون ذكي يُنعّم الطبقة الخارجية للشعر دون تراكم.",
+      "benefits": [
+        {
+          "en": "Detangles hair effortlessly",
+          "ar": "يفك تشابك الشعر بسهولة"
+        },
+        {
+          "en": "Adds long-lasting moisture",
+          "ar": "يضيف ترطيباً طويل الأمد"
+        },
+        {
+          "en": "Reduces breakage during styling",
+          "ar": "يقلل التكسر أثناء التصفيف"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Cyclopentasiloxane",
+          "ar": "سيكلوبنتاسيلوكسان"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        },
+        {
+          "en": "Glycerin",
+          "ar": "جلسرين"
+        },
+        {
+          "en": "Bis-Aminopropyl Dimethicone",
+          "ar": "ثنائي أمينو بروبيل ديميثيكون"
+        }
+      ],
+      "directions": {
+        "en": "Can be applied to freshly washed or dry hair. Spray over towel-dried tresses from ends to roots, avoiding the scalp. Blow dry or air-dry and style as usual.",
+        "ar": "يمكن استخدامه على الشعر المغسول حديثاً أو الجاف. رشّيه على الشعر المجفف بالمنشفة من الأطراف نحو الجذور مع تجنب فروة الرأس. جفّفي بمجفف الشعر أو الهواء وصفّفي كالمعتاد."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "hair2.png",
+      "images": [
+        "hair.png"
+      ],
+      "category": "Conditioners",
+      "sub": "Daily Conditioners",
+      "brand": "Dream & Shine",
+      "price": 32,
+      "quantity": 79,
+      "sold": 68,
+      "colors": []
+    },
+    {
+      "key": "anti-dandruff-shampoo",
+      "title": "Anti Dandruff Shampoo",
+      "titleAr": "شامبو ضد القشرة",
+      "description": "A daily-use anti-dandruff shampoo combining clinical-grade zinc pyrithione with tea tree oil, fenugreek, wheat germ, and rosemary extracts to clear flakes, balance the scalp, and leave hair fresh and clean.",
+      "descriptionAr": "شامبو يومي ضد القشرة يجمع زنك بيريثيون بمستوى طبي مع زيت شجرة الشاي وخلاصات الحلبة وجنين القمح وإكليل الجبل لإزالة القشرة وموازنة فروة الرأس وترك الشعر منعشاً ونظيفاً.",
+      "benefits": [
+        {
+          "en": "Reduces visible flakes",
+          "ar": "يقلل القشرة الظاهرة"
+        },
+        {
+          "en": "Soothes scalp itchiness",
+          "ar": "يهدّئ حكة فروة الرأس"
+        },
+        {
+          "en": "Suitable for daily use",
+          "ar": "مناسب للاستخدام اليومي"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Zinc Pyrithione",
+          "ar": "زنك بيريثيون"
+        },
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        },
+        {
+          "en": "Fenugreek Extract",
+          "ar": "خلاصة الحلبة"
+        },
+        {
+          "en": "Wheat Germ Extract",
+          "ar": "خلاصة جنين القمح"
+        },
+        {
+          "en": "Rosemary Extract",
+          "ar": "خلاصة إكليل الجبل"
+        }
+      ],
+      "directions": {
+        "en": "Massage onto wet hair. Leave on for one minute. Rinse thoroughly. For best results, use daily. Avoid contact with eyes.",
+        "ar": "دلّكيه على الشعر المبلل. اتركيه لمدة دقيقة. اشطفي جيداً. للحصول على أفضل النتائج، استخدميه يومياً. تجنّبي ملامسة العينين."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        },
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "sh1.png",
+      "images": [
+        "sh2.png",
+        "sh3.png"
+      ],
+      "category": "Shampoo",
+      "sub": "Treatment Shampoo",
+      "brand": "Silky Hair",
+      "price": 29,
+      "priceAfterDiscount": 25,
+      "quantity": 96,
+      "sold": 97,
+      "colors": []
+    },
+    {
+      "key": "hair-fall-control-shampoo",
+      "title": "Hair Fall Control Shampoo",
+      "titleAr": "شامبو لمنع تساقط الشعر",
+      "description": "A fortifying shampoo formulated with castor oil, neem, rosemary, pumpkin seed extract, and tea tree oil to strengthen weak strands at the root, minimize breakage, and support visibly fuller hair over time.",
+      "descriptionAr": "شامبو مقوٍّ بتركيبة من زيت الخروع والنيم وإكليل الجبل وخلاصة بذور اليقطين وزيت شجرة الشاي لتقوية الخصلات الضعيفة من الجذور وتقليل التكسر ودعم شعر أكثر كثافة بشكل ملحوظ مع مرور الوقت.",
+      "benefits": [
+        {
+          "en": "Reduces hair fall over time",
+          "ar": "يقلل تساقط الشعر مع الوقت"
+        },
+        {
+          "en": "Strengthens roots",
+          "ar": "يقوّي الجذور"
+        },
+        {
+          "en": "Supports thicker-looking hair",
+          "ar": "يدعم مظهر شعر أكثر كثافة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Castor Oil",
+          "ar": "زيت الخروع"
+        },
+        {
+          "en": "Neem Extract",
+          "ar": "خلاصة النيم"
+        },
+        {
+          "en": "Pumpkin Seed Extract",
+          "ar": "خلاصة بذور اليقطين"
+        },
+        {
+          "en": "Rosemary Extract",
+          "ar": "خلاصة إكليل الجبل"
+        },
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        }
+      ],
+      "directions": {
+        "en": "Massage onto wet hair, leave for one minute, rinse thoroughly. Use daily for best results.",
+        "ar": "دلّكيه على الشعر المبلل واتركيه لمدة دقيقة واشطفي جيداً. استخدميه يومياً للحصول على أفضل النتائج."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        },
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "sh2.png",
+      "images": [
+        "sh1.png"
+      ],
+      "category": "Shampoo",
+      "sub": "Treatment Shampoo",
+      "brand": "Silky Hair",
+      "price": 30,
+      "quantity": 113,
+      "sold": 126,
+      "colors": []
+    },
+    {
+      "key": "anti-lice-shampoo",
+      "title": "Anti Lice Shampoo",
+      "titleAr": "شامبو ضد القمل",
+      "description": "An effective anti-lice shampoo with tea tree oil, fenugreek extract, and green tea extract that helps eliminate lice while caring for the scalp. Gentle enough for regular family use.",
+      "descriptionAr": "شامبو فعّال ضد القمل بزيت شجرة الشاي وخلاصتي الحلبة والشاي الأخضر يساعد على القضاء على القمل مع العناية بفروة الرأس. لطيف بما يكفي للاستخدام العائلي المنتظم.",
+      "benefits": [
+        {
+          "en": "Helps eliminate lice",
+          "ar": "يساعد على القضاء على القمل"
+        },
+        {
+          "en": "Soothes the scalp",
+          "ar": "يهدّئ فروة الرأس"
+        },
+        {
+          "en": "Family-safe formula",
+          "ar": "تركيبة آمنة للعائلة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        },
+        {
+          "en": "Fenugreek Extract",
+          "ar": "خلاصة الحلبة"
+        },
+        {
+          "en": "Rosemary Extract",
+          "ar": "خلاصة إكليل الجبل"
+        },
+        {
+          "en": "Green Tea Extract",
+          "ar": "خلاصة الشاي الأخضر"
+        }
+      ],
+      "directions": {
+        "en": "Massage onto wet hair, leave for one minute, rinse thoroughly. Use daily until lice are eliminated. Avoid contact with eyes.",
+        "ar": "دلّكيه على الشعر المبلل واتركيه لمدة دقيقة واشطفي جيداً. استخدميه يومياً حتى القضاء على القمل. تجنّبي ملامسة العينين."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        },
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "sh3.png",
+      "images": [
+        "sh1.png"
+      ],
+      "category": "Shampoo",
+      "sub": "Treatment Shampoo",
+      "brand": "Silky Hair",
+      "price": 23,
+      "quantity": 50,
+      "sold": 15,
+      "colors": []
+    },
+    {
+      "key": "intimate-hygiene-wash",
+      "title": "Intimate Hygiene Wash",
+      "titleAr": "غسول العناية الشخصية",
+      "description": "A gentle, pH-balanced intimate wash formulated with lactic acid, chamomile, sea buckthorn, and tea tree oil to maintain healthy intimate flora, prevent unpleasant odors, and leave a fresh sensation throughout the day.",
+      "descriptionAr": "غسول حميم لطيف ومتوازن الحموضة بتركيبة من حمض اللاكتيك والبابونج والنبق البحري وزيت شجرة الشاي للحفاظ على فلورا حميمة صحية ومنع الروائح غير المرغوبة وترك إحساس بالنضارة طوال اليوم.",
+      "benefits": [
+        {
+          "en": "Maintains healthy pH balance",
+          "ar": "يحافظ على توازن الحموضة الصحي"
+        },
+        {
+          "en": "Prevents unpleasant odors",
+          "ar": "يمنع الروائح غير المرغوبة"
+        },
+        {
+          "en": "Soothes irritation",
+          "ar": "يهدّئ التهيّج"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Lactic Acid",
+          "ar": "حمض اللاكتيك"
+        },
+        {
+          "en": "Chamomile Extract",
+          "ar": "خلاصة البابونج"
+        },
+        {
+          "en": "Sea Buckthorn Extract",
+          "ar": "خلاصة النبق البحري"
+        },
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        }
+      ],
+      "directions": {
+        "en": "Use daily for a fresh sensation that maintains healthy intimate flora and helps prevent odors and irritation.",
+        "ar": "استخدميه يومياً للحصول على إحساس بالنضارة يحافظ على الفلورا الحميمة الصحية ويساعد على منع الروائح والتهيّج."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "woman.png",
+      "images": [
+        "woman.png"
+      ],
+      "category": "Intimate Care",
+      "sub": "Hygiene Wash",
+      "brand": "Fresh Femme",
+      "price": 33,
+      "priceAfterDiscount": 29,
+      "quantity": 67,
+      "sold": 44,
+      "colors": []
+    },
+    {
+      "key": "calamine-lotion",
+      "title": "Calamine Lotion",
+      "titleAr": "لوشن الكالامين",
+      "description": "A classic calamine lotion enriched with aloe vera and zinc oxide to soothe redness, irritation, and post-sun sensitivity. Mattifies oily skin with a soft pink finish and works beautifully as a primer.",
+      "descriptionAr": "لوشن كالامين كلاسيكي معزّز بالصبار وأكسيد الزنك لتهدئة الاحمرار والتهيّج وحساسية ما بعد الشمس. يعطي البشرة الدهنية لمسة مطفية وردية ويعمل بشكل رائع كأساس.",
+      "benefits": [
+        {
+          "en": "Soothes redness and irritation",
+          "ar": "يهدّئ الاحمرار والتهيّج"
+        },
+        {
+          "en": "Mattifies oily skin",
+          "ar": "يمنح البشرة الدهنية لمسة مطفية"
+        },
+        {
+          "en": "Lightweight, fast-drying",
+          "ar": "خفيف وسريع الجفاف"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Calamine",
+          "ar": "كالامين"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Glycerin",
+          "ar": "جلسرين"
+        }
+      ],
+      "directions": {
+        "en": "Apply to the affected skin with cotton wool three times a day. Shake well before use.",
+        "ar": "ضعيه على البشرة المتأثرة باستخدام قطعة من القطن ثلاث مرات يومياً. رجّي العبوة جيداً قبل الاستخدام."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "care2.png",
+      "images": [
+        "care.png"
+      ],
+      "category": "Skin Care",
+      "sub": "Calamine Care",
+      "brand": "Calm Skin",
+      "price": 22,
+      "quantity": 84,
+      "sold": 73,
+      "colors": []
+    },
+    {
+      "key": "calamine-cream",
+      "title": "Calamine Cream",
+      "titleAr": "كريم الكالامين",
+      "description": "A richer cream version of our classic calamine treatment, blended with aloe vera, zinc oxide, and glycerin. Perfect for irritated or sun-stressed skin that needs both calming and hydration.",
+      "descriptionAr": "نسخة كريمية أغنى من علاج الكالامين الكلاسيكي، ممزوج بالصبار وأكسيد الزنك والجلسرين. مثالي للبشرة المتهيّجة أو المتعبة من الشمس التي تحتاج إلى التهدئة والترطيب معاً.",
+      "benefits": [
+        {
+          "en": "Calms irritation",
+          "ar": "يهدّئ التهيّج"
+        },
+        {
+          "en": "Hydrates while soothing",
+          "ar": "يرطّب أثناء التهدئة"
+        },
+        {
+          "en": "Suitable for sensitive skin",
+          "ar": "مناسب للبشرة الحساسة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Calamine",
+          "ar": "كالامين"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Glycerin",
+          "ar": "جلسرين"
+        }
+      ],
+      "directions": {
+        "en": "Apply to the affected skin with cotton wool three times a day.",
+        "ar": "ضعيه على البشرة المتأثرة باستخدام قطعة من القطن ثلاث مرات يومياً."
+      },
+      "sizes": [
+        {
+          "en": "100g",
+          "ar": "100 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "care.png",
+      "images": [
+        "care2.png"
+      ],
+      "category": "Skin Care",
+      "sub": "Calamine Care",
+      "brand": "Calm Skin",
+      "price": 24,
+      "priceAfterDiscount": 21,
+      "quantity": 101,
+      "sold": 102,
+      "colors": []
+    },
+    {
+      "key": "sunscreen-spf-30-lotion",
+      "title": "Sunscreen SPF 30+ Lotion",
+      "titleAr": "لوشن واقي شمس SPF 30+",
+      "description": "A lightweight broad-spectrum sunscreen lotion with SPF 30+ that protects against UVA/UVB rays while hydrating with shea butter, allantoin, and glycerin. Suitable for daily use under makeup or on its own.",
+      "descriptionAr": "لوشن واقي شمس خفيف واسع الطيف بمعامل SPF 30+ يحمي من أشعة UVA/UVB مع الترطيب بزبدة الشيا والألانتوين والجلسرين. مناسب للاستخدام اليومي تحت المكياج أو منفرداً.",
+      "benefits": [
+        {
+          "en": "Broad-spectrum SPF 30+",
+          "ar": "حماية واسعة SPF 30+"
+        },
+        {
+          "en": "Hydrates with shea butter",
+          "ar": "يرطّب بزبدة الشيا"
+        },
+        {
+          "en": "Lightweight, daily-wear feel",
+          "ar": "خفيف للاستخدام اليومي"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Octinoxate",
+          "ar": "أوكتينوكسات"
+        },
+        {
+          "en": "Octocrylene",
+          "ar": "أوكتوكريلين"
+        },
+        {
+          "en": "Avobenzone",
+          "ar": "أفوبنزون"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        },
+        {
+          "en": "Allantoin",
+          "ar": "ألانتوين"
+        }
+      ],
+      "directions": {
+        "en": "Apply liberally before sun exposure. Reapply every 2 hours and after swimming or sweating for more than 80 minutes.",
+        "ar": "ضعيه بسخاء قبل التعرض للشمس. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرّق لأكثر من 80 دقيقة."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "sun1.png",
+      "images": [
+        "sun4.png"
+      ],
+      "category": "Sun Protection",
+      "sub": "Sunscreen Lotions",
+      "brand": "Sun Shield",
+      "price": 47,
+      "quantity": 118,
+      "sold": 131,
+      "colors": []
+    },
+    {
+      "key": "sunscreen-spf-30-cream",
+      "title": "Sunscreen SPF 30+ Cream",
+      "titleAr": "كريم واقي شمس SPF 30+",
+      "description": "A richer cream-textured SPF 30+ sunscreen ideal for face. Combines broad-spectrum UV filters with shea butter and allantoin for soft, protected, comfortable skin.",
+      "descriptionAr": "كريم واقي شمس بقوام كريمي أغنى بمعامل SPF 30+ مثالي للوجه. يجمع فلاتر الأشعة فوق البنفسجية واسعة الطيف مع زبدة الشيا والألانتوين لبشرة ناعمة محمية ومريحة.",
+      "benefits": [
+        {
+          "en": "Rich, hydrating texture",
+          "ar": "قوام غني مرطّب"
+        },
+        {
+          "en": "SPF 30+ broad-spectrum",
+          "ar": "SPF 30+ واسع الطيف"
+        },
+        {
+          "en": "Ideal for face",
+          "ar": "مثالي للوجه"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Octinoxate",
+          "ar": "أوكتينوكسات"
+        },
+        {
+          "en": "Avobenzone",
+          "ar": "أفوبنزون"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        }
+      ],
+      "directions": {
+        "en": "Apply liberally before sun exposure. Reapply every 2 hours and after swimming or sweating.",
+        "ar": "ضعيه بسخاء قبل التعرض للشمس. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرّق."
+      },
+      "sizes": [
+        {
+          "en": "50g",
+          "ar": "50 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "sun4.png",
+      "images": [
+        "sun1.png"
+      ],
+      "category": "Sun Protection",
+      "sub": "Sunscreen Creams",
+      "brand": "Sun Shield",
+      "price": 48,
+      "priceAfterDiscount": 43,
+      "quantity": 55,
+      "sold": 20,
+      "colors": []
+    },
+    {
+      "key": "sunscreen-spf-50-lotion",
+      "title": "Sunscreen SPF 50+ Lotion",
+      "titleAr": "لوشن واقي شمس SPF 50+",
+      "description": "Our highest-strength sunscreen lotion with SPF 50+ broad-spectrum protection. Filters approximately 98% of UVB rays while hydrating with shea butter and allantoin. Perfect for hot, sunny climates.",
+      "descriptionAr": "لوشن واقي الشمس الأقوى لدينا بحماية واسعة الطيف SPF 50+. يفلتر نحو 98% من أشعة UVB مع الترطيب بزبدة الشيا والألانتوين. مثالي للمناخات الحارة والمشمسة.",
+      "benefits": [
+        {
+          "en": "Maximum SPF 50+ protection",
+          "ar": "حماية قصوى SPF 50+"
+        },
+        {
+          "en": "No white cast",
+          "ar": "لا يترك أثراً أبيض"
+        },
+        {
+          "en": "Hydrating, non-greasy",
+          "ar": "مرطّب وغير دهني"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Octinoxate",
+          "ar": "أوكتينوكسات"
+        },
+        {
+          "en": "Octocrylene",
+          "ar": "أوكتوكريلين"
+        },
+        {
+          "en": "Avobenzone",
+          "ar": "أفوبنزون"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        },
+        {
+          "en": "Glycerin",
+          "ar": "جلسرين"
+        }
+      ],
+      "directions": {
+        "en": "Apply liberally 15 minutes before sun exposure. Reapply every 2 hours and after swimming or sweating.",
+        "ar": "ضعيه بسخاء قبل التعرض للشمس بـ 15 دقيقة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرّق."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": true,
+      "cover": "sun3.png",
+      "images": [
+        "sun2.png"
+      ],
+      "category": "Sun Protection",
+      "sub": "Sunscreen Lotions",
+      "brand": "Sun Shield",
+      "price": 57,
+      "priceAfterDiscount": 50,
+      "quantity": 72,
+      "sold": 49,
+      "colors": []
+    },
+    {
+      "key": "sunscreen-spf-50-cream",
+      "title": "Sunscreen SPF 50+ Cream",
+      "titleAr": "كريم واقي شمس SPF 50+",
+      "description": "A nourishing SPF 50+ face cream that delivers maximum daily UV protection in a soft, hydrating formula. Layers beautifully under makeup and helps prevent photo-aging.",
+      "descriptionAr": "كريم وجه مغذٍّ بمعامل SPF 50+ يوفر أقصى حماية يومية من الأشعة فوق البنفسجية بتركيبة ناعمة ومرطّبة. يندمج بشكل رائع تحت المكياج ويساعد على منع شيخوخة الجلد الناتجة عن الشمس.",
+      "benefits": [
+        {
+          "en": "SPF 50+ broad-spectrum",
+          "ar": "SPF 50+ واسع الطيف"
+        },
+        {
+          "en": "Layers under makeup",
+          "ar": "يندمج تحت المكياج"
+        },
+        {
+          "en": "Helps prevent photo-aging",
+          "ar": "يساعد على منع شيخوخة البشرة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Octinoxate",
+          "ar": "أوكتينوكسات"
+        },
+        {
+          "en": "Avobenzone",
+          "ar": "أفوبنزون"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        },
+        {
+          "en": "Allantoin",
+          "ar": "ألانتوين"
+        }
+      ],
+      "directions": {
+        "en": "Apply liberally before sun exposure. Reapply every 2 hours and after swimming or sweating.",
+        "ar": "ضعيه بسخاء قبل التعرض للشمس. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرّق."
+      },
+      "sizes": [
+        {
+          "en": "50g",
+          "ar": "50 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "sun2.png",
+      "images": [
+        "sun3.png"
+      ],
+      "category": "Sun Protection",
+      "sub": "Sunscreen Creams",
+      "brand": "Sun Shield",
+      "price": 58,
+      "quantity": 89,
+      "sold": 78,
+      "colors": []
+    },
+    {
+      "key": "anti-acne-gel",
+      "title": "Anti Acne Gel",
+      "titleAr": "جل ضد حب الشباب",
+      "description": "A clear gel treatment with niacinamide, salicylic acid, aloe vera, calendula, and rosemary. Works on existing breakouts, helps minimize pore size, and improves overall skin clarity with consistent use.",
+      "descriptionAr": "جل علاجي شفاف بالنياسيناميد وحمض الساليسيليك والصبار والآذريون وإكليل الجبل. يعمل على حب الشباب الموجود ويساعد على تصغير المسام وتحسين صفاء البشرة مع الاستخدام المنتظم.",
+      "benefits": [
+        {
+          "en": "Targets active breakouts",
+          "ar": "يستهدف حب الشباب النشط"
+        },
+        {
+          "en": "Minimizes visible pores",
+          "ar": "يصغّر المسام الظاهرة"
+        },
+        {
+          "en": "Smooths fine lines and texture",
+          "ar": "ينعّم الخطوط الدقيقة وملمس البشرة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Niacinamide",
+          "ar": "نياسيناميد"
+        },
+        {
+          "en": "Salicylic Acid",
+          "ar": "حمض الساليسيليك"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        },
+        {
+          "en": "Calendula Extract",
+          "ar": "خلاصة الآذريون"
+        },
+        {
+          "en": "Rosemary Extract",
+          "ar": "خلاصة إكليل الجبل"
+        }
+      ],
+      "directions": {
+        "en": "Apply to the affected part of the face two to three times a day. Daily use helps reduce pore size, fine lines, and acne.",
+        "ar": "ضعيه على المنطقة المتأثرة من الوجه مرتين إلى ثلاث مرات يومياً. الاستخدام اليومي يساعد على تقليل حجم المسام والخطوط الدقيقة وحب الشباب."
+      },
+      "sizes": [
+        {
+          "en": "50ml",
+          "ar": "50 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "v2.webp",
+      "images": [
+        "v1.webp"
+      ],
+      "category": "Anti Acne",
+      "sub": "Face Acne Care",
+      "brand": "Clear Skin",
+      "price": 35,
+      "priceAfterDiscount": 31,
+      "quantity": 106,
+      "sold": 107,
+      "colors": []
+    },
+    {
+      "key": "anti-acne-face-wash",
+      "title": "Anti Acne Face Wash",
+      "titleAr": "غسول الوجه لحب الشباب",
+      "description": "A gentle yet effective face wash designed for pimple-prone skin. Cleanses deep into pores using salicylic acid and niacinamide, with calming aloe vera, calendula, and vitamin E. Suitable for all skin types.",
+      "descriptionAr": "غسول وجه لطيف وفعّال مصمم للبشرة المعرضة لحب الشباب. ينظّف عمق المسام بحمض الساليسيليك والنياسيناميد مع الصبار المهدّئ والآذريون وفيتامين هـ. مناسب لجميع أنواع البشرة.",
+      "benefits": [
+        {
+          "en": "Cleanses deep into pores",
+          "ar": "ينظّف عمق المسام"
+        },
+        {
+          "en": "Controls excess oil",
+          "ar": "يتحكم بالزيت الزائد"
+        },
+        {
+          "en": "Suitable for all skin types",
+          "ar": "مناسب لجميع أنواع البشرة"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Salicylic Acid",
+          "ar": "حمض الساليسيليك"
+        },
+        {
+          "en": "Niacinamide (Vitamin B3)",
+          "ar": "نياسيناميد (فيتامين ب3)"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        },
+        {
+          "en": "Calendula Extract",
+          "ar": "خلاصة الآذريون"
+        },
+        {
+          "en": "Vitamin E",
+          "ar": "فيتامين هـ"
+        }
+      ],
+      "directions": {
+        "en": "Apply to wet face, lather gently, and rinse thoroughly. Use morning and night. Avoid contact with eyes — flush with water if contact occurs.",
+        "ar": "ضعيه على الوجه المبلل، أرغي بلطف، واشطفي جيداً. استخدميه صباحاً ومساءً. تجنّبي ملامسة العينين — اشطفي بالماء عند الملامسة."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        },
+        {
+          "en": "200ml",
+          "ar": "200 مل"
+        }
+      ],
+      "featured": true,
+      "cover": "v1.webp",
+      "images": [
+        "v2.webp"
+      ],
+      "category": "Anti Acne",
+      "sub": "Face Acne Care",
+      "brand": "Clear Skin",
+      "price": 33,
+      "quantity": 43,
+      "sold": 136,
+      "colors": []
+    },
+    {
+      "key": "anti-acne-body-spray",
+      "title": "Anti Acne Body Spray",
+      "titleAr": "بخاخ الجسم ضد حب الشباب",
+      "description": "A quick-drying anti-acne body spray with niacinamide, glycolic and salicylic acids, and tea tree oil. Reaches hard-to-cover areas like the back and shoulders to help clear body breakouts.",
+      "descriptionAr": "بخاخ جسم سريع الجفاف ضد حب الشباب بالنياسيناميد وحمضي الجليكوليك والساليسيليك وزيت شجرة الشاي. يصل إلى المناطق التي يصعب الوصول إليها مثل الظهر والكتفين للمساعدة على تصفية حب شباب الجسم.",
+      "benefits": [
+        {
+          "en": "Reaches back and shoulders easily",
+          "ar": "يصل بسهولة إلى الظهر والكتفين"
+        },
+        {
+          "en": "Fast-drying, non-sticky",
+          "ar": "سريع الجفاف وغير لزج"
+        },
+        {
+          "en": "Targets body breakouts",
+          "ar": "يستهدف حب شباب الجسم"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Niacinamide",
+          "ar": "نياسيناميد"
+        },
+        {
+          "en": "Glycolic Acid",
+          "ar": "حمض الجليكوليك"
+        },
+        {
+          "en": "Salicylic Acid",
+          "ar": "حمض الساليسيليك"
+        },
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        }
+      ],
+      "directions": {
+        "en": "Spray on clean, dry skin twice daily. Allow to absorb before dressing. Avoid contact with eyes.",
+        "ar": "رشّيه على بشرة نظيفة وجافة مرتين يومياً. اتركيه ليمتص قبل ارتداء الملابس. تجنّبي ملامسة العينين."
+      },
+      "sizes": [
+        {
+          "en": "50ml",
+          "ar": "50 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "ant5.png",
+      "images": [
+        "ant5.png"
+      ],
+      "category": "Anti Acne",
+      "sub": "Body Acne Care",
+      "brand": "Clear Skin",
+      "price": 40,
+      "priceAfterDiscount": 36,
+      "quantity": 60,
+      "sold": 25,
+      "colors": []
+    },
+    {
+      "key": "anti-acne-soap",
+      "title": "Anti Acne Soap",
+      "titleAr": "صابون ضد حب الشباب",
+      "description": "A grade-1 (76% TFM) anti-acne soap formulated with tea tree oil, zinc oxide, wheat germ extract, and allantoin. A daily wash that helps clear blemishes and supports rash-free, glowing skin.",
+      "descriptionAr": "صابون ضد حب الشباب من الدرجة الأولى (76% TFM) بتركيبة من زيت شجرة الشاي وأكسيد الزنك وخلاصة جنين القمح والألانتوين. غسول يومي يساعد على تصفية الشوائب ودعم بشرة مشرقة خالية من الطفح.",
+      "benefits": [
+        {
+          "en": "Daily anti-acne cleansing",
+          "ar": "تنظيف يومي ضد حب الشباب"
+        },
+        {
+          "en": "Soothes with allantoin",
+          "ar": "يهدّئ بالألانتوين"
+        },
+        {
+          "en": "For face and body",
+          "ar": "للوجه والجسم"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Tea Tree Oil",
+          "ar": "زيت شجرة الشاي"
+        },
+        {
+          "en": "Zinc Oxide",
+          "ar": "أكسيد الزنك"
+        },
+        {
+          "en": "Wheat Germ Extract",
+          "ar": "خلاصة جنين القمح"
+        },
+        {
+          "en": "Allantoin",
+          "ar": "ألانتوين"
+        }
+      ],
+      "directions": {
+        "en": "Apply to wet skin, rub gently to develop a rich lather, and after two minutes rinse off thoroughly.",
+        "ar": "ضعيه على البشرة المبللة وافركيه بلطف لتكوين رغوة غنية، وبعد دقيقتين اشطفي جيداً."
+      },
+      "sizes": [
+        {
+          "en": "100g",
+          "ar": "100 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "ant2.png",
+      "images": [
+        "ant2.png",
+        "banner/b8.png"
+      ],
+      "category": "Anti Acne",
+      "sub": "Body Acne Care",
+      "brand": "Clear Skin",
+      "price": 16,
+      "quantity": 77,
+      "sold": 54,
+      "colors": []
+    },
+    {
+      "key": "panthenol-cream",
+      "title": "Panthenol Cream",
+      "titleAr": "كريم البانثينول",
+      "description": "A reparative cream rich in D-panthenol (provitamin B5), hyaluronic acid, vitamin E, shea butter, and aloe vera. Soothes irritation, deeply hydrates, and restores comfort to dry, sensitive, or post-sun skin.",
+      "descriptionAr": "كريم ترميمي غنيٌّ بالبانثينول (بروفيتامين ب5) وحمض الهيالورونيك وفيتامين هـ وزبدة الشيا والصبار. يهدّئ التهيّج ويرطّب بعمق ويعيد الراحة للبشرة الجافة أو الحساسة أو بعد التعرض للشمس.",
+      "benefits": [
+        {
+          "en": "Repairs dry, stressed skin",
+          "ar": "يصلح البشرة الجافة والمتعبة"
+        },
+        {
+          "en": "Deep hydration with hyaluronic acid",
+          "ar": "ترطيب عميق بحمض الهيالورونيك"
+        },
+        {
+          "en": "Soothes irritation post-sun",
+          "ar": "يهدّئ التهيّج بعد الشمس"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "D-Panthenol",
+          "ar": "دي-بانثينول"
+        },
+        {
+          "en": "Hyaluronic Acid",
+          "ar": "حمض الهيالورونيك"
+        },
+        {
+          "en": "Vitamin E",
+          "ar": "فيتامين هـ"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        }
+      ],
+      "sizes": [
+        {
+          "en": "50g",
+          "ar": "50 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "scan1.png",
+      "images": [
+        "scan2.png"
+      ],
+      "category": "Moisturizers",
+      "sub": "Panthenol Care",
+      "brand": "Aqua Derm",
+      "price": 33,
+      "priceAfterDiscount": 29,
+      "quantity": 94,
+      "sold": 83,
+      "colors": []
+    },
+    {
+      "key": "panthenol-lotion",
+      "title": "Panthenol Lotion",
+      "titleAr": "لوشن البانثينول",
+      "description": "A fast-absorbing lotion form of our panthenol treatment, ideal for face and body. Combines D-panthenol, hyaluronic acid, vitamin E, and aloe vera for everyday hydration and skin barrier support.",
+      "descriptionAr": "لوشن سريع الامتصاص من علاج البانثينول لدينا، مثالي للوجه والجسم. يجمع البانثينول وحمض الهيالورونيك وفيتامين هـ والصبار للترطيب اليومي ودعم حاجز البشرة.",
+      "benefits": [
+        {
+          "en": "Lightweight everyday hydration",
+          "ar": "ترطيب يومي خفيف"
+        },
+        {
+          "en": "Strengthens skin barrier",
+          "ar": "يقوّي حاجز البشرة"
+        },
+        {
+          "en": "For face and body",
+          "ar": "للوجه والجسم"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "D-Panthenol",
+          "ar": "دي-بانثينول"
+        },
+        {
+          "en": "Hyaluronic Acid",
+          "ar": "حمض الهيالورونيك"
+        },
+        {
+          "en": "Vitamin E",
+          "ar": "فيتامين هـ"
+        },
+        {
+          "en": "Shea Butter",
+          "ar": "زبدة الشيا"
+        },
+        {
+          "en": "Aloe Vera Extract",
+          "ar": "خلاصة الصبار"
+        }
+      ],
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "scan2.png",
+      "images": [
+        "scan1.png"
+      ],
+      "category": "Moisturizers",
+      "sub": "Panthenol Care",
+      "brand": "Aqua Derm",
+      "price": 35,
+      "quantity": 111,
+      "sold": 112,
+      "colors": []
+    },
+    {
+      "key": "melasma-face-wash",
+      "title": "Melasma Face Wash",
+      "titleAr": "غسول الوجه للكلف والبقع",
+      "description": "A targeted face wash for melasma and dark spots, formulated with glycolic acid, salicylic acid, niacinamide, and provitamin B5. Use as part of a daily routine that includes moisturizer and a minimum SPF 15 sunscreen.",
+      "descriptionAr": "غسول وجه مستهدف للكلف والبقع الداكنة بتركيبة من حمض الجليكوليك وحمض الساليسيليك والنياسيناميد وبروفيتامين ب5. يُستخدم كجزء من روتين يومي يشمل مرطباً وواقياً للشمس بمعامل لا يقل عن SPF 15.",
+      "benefits": [
+        {
+          "en": "Targets dark spots and melasma",
+          "ar": "يستهدف البقع الداكنة والكلف"
+        },
+        {
+          "en": "Gently exfoliates with glycolic acid",
+          "ar": "يقشّر بلطف بحمض الجليكوليك"
+        },
+        {
+          "en": "Brightens for even tone",
+          "ar": "ينير لتوحيد اللون"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Glycolic Acid",
+          "ar": "حمض الجليكوليك"
+        },
+        {
+          "en": "Salicylic Acid",
+          "ar": "حمض الساليسيليك"
+        },
+        {
+          "en": "Niacinamide (Vitamin B3)",
+          "ar": "نياسيناميد (فيتامين ب3)"
+        },
+        {
+          "en": "Panthenol (Vitamin B5)",
+          "ar": "بانثينول (فيتامين ب5)"
+        }
+      ],
+      "directions": {
+        "en": "Use preferably twice daily. Pair with a moisturizer and a daily sunscreen of SPF 15 or higher, and limit direct sun exposure for best results.",
+        "ar": "يُفضّل استخدامه مرتين يومياً. أقرنيه بمرطّب وواقٍ شمسي يومي بمعامل SPF 15 أو أعلى، وقللي التعرض المباشر للشمس للحصول على أفضل النتائج."
+      },
+      "sizes": [
+        {
+          "en": "100ml",
+          "ar": "100 مل"
+        }
+      ],
+      "featured": false,
+      "cover": "ant1.png",
+      "images": [
+        "ant3.png"
+      ],
+      "category": "Melasma Care",
+      "sub": "Spot Correction",
+      "brand": "Pure Glow",
+      "price": 38,
+      "quantity": 48,
+      "sold": 141,
+      "colors": []
+    },
+    {
+      "key": "melasma-cream",
+      "title": "Melasma Cream",
+      "titleAr": "كريم الكلف والبقع",
+      "description": "An advanced anti-melasma cream combining arbutin, kojic acid dipalmitate, niacinamide, and bearberry and licorice extracts. Targets pigmentation and dark spots while protecting with built-in zinc oxide and SPF support.",
+      "descriptionAr": "كريم متقدم ضد الكلف يجمع الأربوتين وثنائي بالميتات الكوجيك والنياسيناميد وخلاصتي عنب الدب وعرق السوس. يستهدف التصبّغ والبقع الداكنة مع توفير الحماية بأكسيد الزنك ودعم واقٍ من الشمس.",
+      "benefits": [
+        {
+          "en": "Targets pigmentation",
+          "ar": "يستهدف التصبّغ"
+        },
+        {
+          "en": "Brightens with kojic acid + arbutin",
+          "ar": "ينير بحمض الكوجيك والأربوتين"
+        },
+        {
+          "en": "Vitamin E antioxidant support",
+          "ar": "دعم مضاد للأكسدة بفيتامين هـ"
+        }
+      ],
+      "ingredients": [
+        {
+          "en": "Arbutin",
+          "ar": "أربوتين"
+        },
+        {
+          "en": "Kojic Acid Dipalmitate",
+          "ar": "ثنائي بالميتات حمض الكوجيك"
+        },
+        {
+          "en": "Niacinamide",
+          "ar": "نياسيناميد"
+        },
+        {
+          "en": "Bearberry Extract",
+          "ar": "خلاصة عنب الدب"
+        },
+        {
+          "en": "Licorice Extract",
+          "ar": "خلاصة عرق السوس"
+        },
+        {
+          "en": "Vitamin E",
+          "ar": "فيتامين هـ"
+        }
+      ],
+      "directions": {
+        "en": "Apply preferably twice daily. Use alongside a moisturizer and daily sunscreen (SPF 15 minimum). Avoid direct sun exposure.",
+        "ar": "يُفضّل استخدامه مرتين يومياً. استخدميه مع مرطّب وواقٍ شمسي يومي (SPF 15 على الأقل). تجنّبي التعرض المباشر للشمس."
+      },
+      "sizes": [
+        {
+          "en": "50g",
+          "ar": "50 جم"
+        }
+      ],
+      "featured": false,
+      "cover": "ant3.png",
+      "images": [
+        "ant1.png",
+        "ant4.png"
+      ],
+      "category": "Melasma Care",
+      "sub": "Spot Correction",
+      "brand": "Pure Glow",
+      "price": 53,
+      "priceAfterDiscount": 48,
+      "quantity": 65,
+      "sold": 30,
+      "colors": []
+    }
+  ],
+  "userPassword": "123456",
+  "users": [
+    {
+      "name": "Admin User",
+      "email": "admin@care.com",
+      "role": "admin",
+      "image": "woman.png",
+      "city": "Cairo"
+    },
+    {
+      "name": "Manager User",
+      "email": "manager@care.com",
+      "role": "manager",
+      "image": "care.png",
+      "city": "Giza"
+    },
+    {
+      "name": "Ahmed Ali",
+      "email": "ahmed@care.com",
+      "image": "hair.png",
+      "city": "Alexandria"
+    },
+    {
+      "name": "Sara Mohamed",
+      "email": "sara@care.com",
+      "image": "sun1.png",
+      "city": "Mansoura"
+    },
+    {
+      "name": "Mona Hassan",
+      "email": "mona@care.com",
+      "image": "oil1.png",
+      "city": "Tanta"
+    },
+    {
+      "name": "Omar Khaled",
+      "email": "omar@care.com",
+      "image": "sh1.png",
+      "city": "Aswan"
+    },
+    {
+      "name": "Nour Adel",
+      "email": "nour@care.com",
+      "image": "ant1.png",
+      "city": "Luxor"
+    },
+    {
+      "name": "Youssef Samir",
+      "email": "youssef@care.com",
+      "image": "scan1.png",
+      "city": "Suez"
+    },
+    {
+      "name": "Laila Ibrahim",
+      "email": "laila@care.com",
+      "image": "care2.png",
+      "city": "Zagazig"
+    },
+    {
+      "name": "Hana Mostafa",
+      "email": "hana@care.com",
+      "image": "hair2.png",
+      "city": "Ismailia"
+    }
+  ],
+  "reviews": [
+    {
+      "title": "Amazing product, highly recommended",
+      "ratings": 5
+    },
+    {
+      "title": "Very good quality",
+      "ratings": 4
+    },
+    {
+      "title": "منتج ممتاز وريحته حلوة",
+      "ratings": 5
+    },
+    {
+      "title": "Worked great for me",
+      "ratings": 4
+    },
+    {
+      "title": "Good value for money",
+      "ratings": 4
+    },
+    {
+      "title": "جربته وفرق معايا جدا",
+      "ratings": 5
+    },
+    {
+      "title": "Nice texture, not greasy",
+      "ratings": 4
+    },
+    {
+      "title": "Gentle on my skin",
+      "ratings": 5
+    },
+    {
+      "title": "Results took a while but worth it",
+      "ratings": 3
+    },
+    {
+      "title": "هشتريه تاني أكيد",
+      "ratings": 5
+    },
+    {
+      "title": "Excellent results",
+      "ratings": 5
+    },
+    {
+      "title": "Okay, expected a bit more",
+      "ratings": 3
+    }
+  ],
+  "coupons": [
+    {
+      "name": "WELCOME10",
+      "discount": 10
+    },
+    {
+      "name": "SUMMER20",
+      "discount": 20
+    },
+    {
+      "name": "CARE15",
+      "discount": 15
+    },
+    {
+      "name": "SHINE25",
+      "discount": 25
+    },
+    {
+      "name": "HAIR5",
+      "discount": 5
+    },
+    {
+      "name": "SKIN30",
+      "discount": 30
+    },
+    {
+      "name": "VIP40",
+      "discount": 40
+    },
+    {
+      "name": "FLASH50",
+      "discount": 50
+    },
+    {
+      "name": "EID35",
+      "discount": 35
+    },
+    {
+      "name": "NEWUSER12",
+      "discount": 12
+    }
+  ],
+  "branches": [
+    {
+      "name": "Royal Care - Nasr City",
+      "nameAr": "رويال كير - مدينة نصر",
+      "city": "Cairo",
+      "cityAr": "القاهرة",
+      "address": "15 Abbas El Akkad St, Nasr City",
+      "addressAr": "15 شارع عباس العقاد، مدينة نصر",
+      "phone": "+20 2 2270 1100",
+      "lat": 30.0566,
+      "lng": 31.3437,
+      "isMain": true,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Maadi",
+      "nameAr": "رويال كير - المعادي",
+      "city": "Cairo",
+      "cityAr": "القاهرة",
+      "address": "9 Road 9, Maadi",
+      "addressAr": "9 شارع 9، المعادي",
+      "phone": "+20 2 2358 4400",
+      "lat": 29.9602,
+      "lng": 31.2569,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - New Cairo",
+      "nameAr": "رويال كير - القاهرة الجديدة",
+      "city": "New Cairo",
+      "cityAr": "القاهرة الجديدة",
+      "address": "90th Street, Fifth Settlement",
+      "addressAr": "شارع التسعين، التجمع الخامس",
+      "phone": "+20 2 2811 7700",
+      "lat": 30.0284,
+      "lng": 31.4693,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Mohandessin",
+      "nameAr": "رويال كير - المهندسين",
+      "city": "Giza",
+      "cityAr": "الجيزة",
+      "address": "42 Gameat El Dowal El Arabeya St, Mohandessin",
+      "addressAr": "42 شارع جامعة الدول العربية، المهندسين",
+      "phone": "+20 2 3761 2200",
+      "lat": 30.0566,
+      "lng": 31.2003,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Sheikh Zayed",
+      "nameAr": "رويال كير - الشيخ زايد",
+      "city": "Giza",
+      "cityAr": "الجيزة",
+      "address": "Arkan Plaza, Sheikh Zayed City",
+      "addressAr": "أركان بلازا، مدينة الشيخ زايد",
+      "phone": "+20 2 3851 9900",
+      "lat": 30.0193,
+      "lng": 30.9726,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Smouha",
+      "nameAr": "رويال كير - سموحة",
+      "city": "Alexandria",
+      "cityAr": "الإسكندرية",
+      "address": "22 Victor Emmanuel Sq, Smouha",
+      "addressAr": "22 ميدان فيكتور عمانويل، سموحة",
+      "phone": "+20 3 425 6600",
+      "lat": 31.2156,
+      "lng": 29.9553,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Mansoura",
+      "nameAr": "رويال كير - المنصورة",
+      "city": "Mansoura",
+      "cityAr": "المنصورة",
+      "address": "El Gomhoreya St, Mansoura",
+      "addressAr": "شارع الجمهورية، المنصورة",
+      "phone": "+20 50 223 4455",
+      "lat": 31.0409,
+      "lng": 31.3785,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Tanta",
+      "nameAr": "رويال كير - طنطا",
+      "city": "Tanta",
+      "cityAr": "طنطا",
+      "address": "El Bahr St, Tanta",
+      "addressAr": "شارع البحر، طنطا",
+      "phone": "+20 40 333 7788",
+      "lat": 30.7865,
+      "lng": 31.0004,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Hurghada",
+      "nameAr": "رويال كير - الغردقة",
+      "city": "Hurghada",
+      "cityAr": "الغردقة",
+      "address": "Sheraton Road, Hurghada",
+      "addressAr": "طريق الشيراتون، الغردقة",
+      "phone": "+20 65 344 1122",
+      "lat": 27.2165,
+      "lng": 33.8356,
+      "workingHours": "10:00 AM - 11:00 PM"
+    },
+    {
+      "name": "Royal Care - Assiut",
+      "nameAr": "رويال كير - أسيوط",
+      "city": "Assiut",
+      "cityAr": "أسيوط",
+      "address": "El Gomhoreya St, Assiut",
+      "addressAr": "شارع الجمهورية، أسيوط",
+      "phone": "+20 88 229 6633",
+      "lat": 27.1809,
+      "lng": 31.1837,
+      "workingHours": "10:00 AM - 11:00 PM"
+    }
+  ],
+  "currency": "AED"
+}
