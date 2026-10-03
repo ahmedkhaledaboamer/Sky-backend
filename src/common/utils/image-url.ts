@@ -3,7 +3,9 @@
 // read and saved again never ends up with a nested URL.
 export const toImageUrl = (folder: string, value?: string | null) => {
   if (!value || /^https?:\/\//.test(value)) return value;
-  return `${process.env.BASE_URL}/${folder}/${value}`;
+  // BASE_URL may be set with a trailing slash ("https://site.com/"): avoid "//folder"
+  const base = (process.env.BASE_URL ?? '').replace(/\/+$/, '');
+  return `${base}/${folder}/${value}`;
 };
 
 // Reverse of toImageUrl — keeps only the file name before saving.
